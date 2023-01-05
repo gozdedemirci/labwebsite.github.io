@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+
+
+    /*
+        utils css
+    */
+
+
+    body a{
+        text-decoration:none;
+    }
+    div.content ul{
+        list-style: disc inside none;
+        list-style-position: outside;
+        margin-left: 1em;
+    }
+    div.content ol{
+        list-style: none inside none;
+    }
+    div.content li{
+        line-height:30px;
+    }
+    div.content div.float-right{
+        float:right;
+    }
+
+  #group-info{
+    float: left;
+    margin: auto;
+    position:relative;
+    top: 0;
+    left: 0;
+    overflow:visible;
+    width:50%;
+    text-align: center;
+    border-color: black;
+}
+  #group-info > img.group{
+    max-height:180px;
+    max-width:180px;
+    margin:20px 35px;
+    border-radius: 50%;
+  }
+
+    #sidebar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        /* background: #0b4c75; */
+        background-image: url("../resources/bg.png");
+        width:15%;
+        height: 100%;
+    }
+    #sidebar > img.me{
+        max-height:150px;
+        max-width:150px;
+        margin-left:25%;
+        margin-top: 20%;
+        border-radius: 50%;
+    }
+  #sidebar div.info{
+    color: white;
+    text-align: center;
+  }
+  #sidebar div.info > .name{
+      font-family: 'Monospace', serif;
+      font-size: 18px;
+      font-weight: bold;
+      /* font-style: italic; */
+  }
+  #sidebar div.info > .email{
+      font-size: 15px;
+      font-family: 'Monospace', serif;
+      /* font-style: italic; */
+      font-weight: 800;
+  }
+  #sidebar div.info > .link{
+    font-size: 14px;
+    font-weight: 500;
+
+  }
+  #sidebar div.info > .link > a{
+    color: white;
+    text-decoration: underline;
+  }
+  #navigation{
+    padding-top: 10px;
+    margin-top:  10px;
+  }
+  #navigation > a.nav_item{
+    display: block;
+    color: white;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-align: right;
+    font-weight: 1.5;
+    /* background: #0765A0; */
+  }
+  #navigation > a.nav_item:hover{
+    background: #29465B;
+  }
+
+
+  /*----------------------------*/
+
+    #main{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    right: 0;  /* right and bottom property is crucial */
+    bottom: 0;
+    overflow:auto;
+    min-width: 500px;
+    margin-right: 10%;
+  }
+
+
+  #main > div.content{
+    padding: 10px 50px;
+    line-height: 25px;
+    font-family: 'Monospace', serif;
+    font-weight: 450;
+    font-size: 16px;
+  }
+
+  #main > div.title{
+    padding:20px 0;
+    margin: 0 50px;
+    border-bottom:1px silver solid;
+    margin-bottom:10px;
+    font-size:2em;
+    font-weight:bold;
+  }
+
+  #main > div.subtitle
+  {
+    padding: 10px 0;
+    margin: 0 50px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  #main div.linebreak{
+    padding: 5px;
+  }
+  #main a.title_link{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    outline: none;
+  }
+  img.press{
+    height:20px;
+  }
+
+  div.publications > ol > li{
+    padding-bottom: 30px;
+  }
+  div.publications > ol > li > span.title{
+    font-weight:bold;
+    font-size:1.2em;
+  }
+  div.publications > ol > li > div.info{
+    padding-left:20px;
+    word-wrap:break-word;
+  }
+  div.publications > ol > li > div.info.italic{
+    font-style: italic;
+  }
+  div.publications div.imgblock{
+    float:left;
+    max-height:200px;
+    min-height: 150px;
+    max-width:250px;
+    padding: 0;
+    margin-right:20px;
+    text-align: center;
+  }
+  div.publications div.imgblock > img{
+    max-width:100%;
+    max-height:100%;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {    
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin: auto;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  /* Clear floats after the columns */
+  .row {
+    display: flex;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
