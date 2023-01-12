@@ -20,12 +20,20 @@ body {
 	font-size: 1.0em;
 	width: auto;
 	white-space: nowrap;
+	background: linear-gradient(to top, #ccc0c8 0%, #ebf0f3 100%);
 }
 
 #layout-menu a {
 	line-height: 1.5em;
 	margin-left: 6em;
+	display: block;
 }
+#layout-menu > a.nav_item:hover{
+    background: #29465B;
+  }
+  #layout-menu > a.current{
+    color: purple;
+  }
 
 tt {
 	color: green;
@@ -50,7 +58,7 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
+	color: #0a2145;
 	border-bottom: 1px gray solid;
 }
 
@@ -115,6 +123,8 @@ div#subtitle {
 	margin-top: 20px;
 	margin-right: 20px;
 	display: inline-block;
+	width: 1100px;
+	min-height:1100px;
 }
 
 em {
@@ -168,10 +178,13 @@ pre {
 }
 
 div#footer {
-	font-size: small;
-	border-top: 1px solid gray;
-	padding-top: 0.1em;
-	margin-top: 4.0em;
+	/* font-size: small;
+	border-top: 1px solid gray; */
+	clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: 1000px;
+
 }
 div#footer-text {
 	float: left;
